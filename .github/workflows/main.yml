@@ -1,7 +1,7 @@
 name: morning
 on:
   schedule:
-  - cron:  '0 0 * * * '
+  - cron:  '0 0/10 * * * '
   workflow_dispatch:
 
 jobs:
@@ -23,10 +23,10 @@ jobs:
     - run: pip install -r ./requirements.txt && python ./main.py
 
     env:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_SECRET: ${{ secrets.APP_SECRET }}
-      TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
-      USER_ID: ${{ secrets.USER_ID }}
-      START_DATE: ${{ secrets.START_DATE }}
-      BIRTHDAY: ${{ secrets.BIRTHDAY }}
-      CITY: ${{ secrets.CITY }}
+      APP_ID: wx169fde3881ac8b09
+      APP_SECRET: 70d836f92ebab2aceee231289d777bc0
+      TEMPLATE_ID: e1rPOmTttLb7vNriZcxTxdg9h1x9uP56PR2bkFgv5Io
+      USER_ID: oODlz6NbMib-xuWQrs48EjBsfleA
+      START_DATE: 2020-10-08
+      BIRTHDAY: 10-08
+      CITY: 南京
